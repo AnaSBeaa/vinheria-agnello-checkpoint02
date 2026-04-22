@@ -1,0 +1,102 @@
+/* RESET GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* BODY COM FUNDO */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: url("../assets/imgs/backgroundvinharia.jpeg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* OVERLAY ESCURO PARA MELHOR LEITURA */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 600px;
+}
+
+/* CARD PRINCIPAL */
+.card {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  border-radius: 12px;
+
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+
+  text-align: center;
+}
+
+/* TÍTULO */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #f5e1a4;
+}
+
+/* DESCRIÇÃO */
+.descricao {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #ffd7a0;
+  font-weight: bold;
+}
+
+/* TEXTO */
+p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* BLOCO DE INFO */
+.info {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* LISTA */
+ul {
+  margin-top: 10px;
+  padding-left: 18px;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .card {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
